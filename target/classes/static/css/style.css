@@ -1,0 +1,208 @@
+menu{
+    background-color: #fef7ed;
+}
+.menu .bg-dark{
+    background-color:  transparent!important;
+}
+.navbar-dark a{
+    color:#3a54b4!important;
+}
+header{
+    background-color: transparent;
+}
+
+.navbar-dark a:hover{
+    color:#ff8a79!important;
+}
+
+.navbar-dark .navbar-toggler button {
+   
+    color: #3a54b4!important;
+    border-color:#3a54b4!important;
+}
+.slider .btn-group-lg>.btn, .btn-lg {
+   
+    border-radius:0rem !important;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.24),0 1px 1px 0 rgba(0,0,0,0.16);
+   
+}
+.slider .btn-group-lg>.btn, .btn-lg:hover {
+    background-color: #3a54b4!important;
+    color: white!important;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.24),0 2px 2px 0 rgba(0,0,0,0.16);
+   
+}
+
+
+
+
+.slider{
+    
+	
+   
+	height:100%;
+ 
+    max-height: 100%;
+    background-color: #fef7ed;
+}
+.texto-pricipal {
+    padding-top: 25%;
+    color: #3a54b4;
+
+}
+.texto-pricipal h2 {
+    font-size: 3.5em;
+}
+.texto-pricipal a{
+    margin-top: 10px;
+    
+}
+.slider img{
+    padding: 5%;
+}
+.quienestexto-pricipal{
+    
+    padding-top: 20%;
+}
+.quienestexto {
+    font-size: 1.3em;
+        color: #3a54b4;
+
+}
+.margin-50{
+    margin-top: 50px;
+}
+.paddin-50{
+    padding-top:80px;
+}
+
+.registro2{
+    background:url(../img/img7.jpg) no-repeat center center;
+    height: 100%;
+    width: 100%;
+   
+    background-size: cover;
+    
+
+}
+.registro2 label{
+    color: #3a54b4;
+}
+
+
+@media (max-width: 700px) { 
+    .texto-pricipal {
+        padding-top: 10%;
+       
+    
+    }
+    .bnes{
+        text-align: center;
+    }
+
+ }
+ .administrador .card{
+     color:#3a54b4;
+ }
+
+ .administrador .card {
+    transition: 0.8s;
+    border: black 3px fixed;
+}
+.administrador .card:hover {
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,0.24),0 1px 1px 0 rgba(0,0,0,0.16);
+}
+.banner{
+    background-color: #2a3b47;
+    color:#66d1ff;
+    padding: 100px;
+}
+
+.bannerClientes{
+    background:url(../img/banner.jpg) no-repeat center center;
+    
+    width: 100%;
+    height: 400px;
+   
+    background-size: cover;
+
+   
+
+}
+
+.bannerClientes h1{
+
+    padding-top: 15%;
+    color: white;
+    font-size: 3.2em;
+}
+.bannerAdministradores h1{
+
+    padding-top: 20%;
+    color: white;
+    font-size: 3.2em;
+}
+.bannerVeterinarias h1{
+
+    padding-top: 20%;
+    color: white;
+    font-size: 3.2em;
+}
+
+.tablaClientes  .btn-group-sm>.btn, .btn-sm {
+   
+    border-radius:0rem !important;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.24),0 1px 1px 0 rgba(0,0,0,0.16);
+   
+}
+.tablaClientes .btn-group-sm>.btn, .btn-sm:hover {
+    background-color: #3a54b4!important;
+    color: white!important;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.24),0 2px 2px 0 rgba(0,0,0,0.16);
+   
+}
+
+ .btn-group-sm>.btn, .btn-md {
+   
+    border-radius:0rem !important;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.24),0 1px 1px 0 rgba(0,0,0,0.16);
+   
+}
+ .btn-group-sm>.btn, .btn-md:hover {
+    background-color: #3a54b4!important;
+    color: white!important;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.24),0 2px 2px 0 rgba(0,0,0,0.16);
+   
+}
+
+
+.bannerAdministradores{
+    background:url(../img/g3.jpg) no-repeat center center;
+    
+    width: 100%;
+    height: 400px;
+   
+    background-size: cover;
+
+   
+
+}
+
+.bannerVeterinarias{
+    background:url(../img/img10.jpg) no-repeat center center;
+    
+    width: 100%;
+    height: 400px;
+   
+    background-size: cover;
+
+   
+
+}
+
+
+
+
+
+
+
