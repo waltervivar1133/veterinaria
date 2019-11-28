@@ -13,7 +13,7 @@ public class Veterinaria {
 
     private String id;
     private String nombre;
-    private String direccion;
+    private String distrito;
     private String correo;
     private String numero;
 }

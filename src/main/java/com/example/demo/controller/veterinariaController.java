@@ -19,74 +19,69 @@ public class veterinariaController {
     @Autowired
     VeterinariaService veterinariaService;
 
+
     @GetMapping("/veterinaria")
-    public String getVeterinariasList(Model model){
-        //list
-
-        List<Veterinaria> veterinarias = veterinariaService.getAll();
-        model.addAttribute("veterinarias",veterinarias);
+    public String getVeterinarias(Model model) {
         model.addAttribute("veterinaria", new Veterinaria());
-
-
+        model.addAttribute("veterinarias", veterinariaService.findAll());
         return "veterinaria";
     }
 
     @PostMapping("/veterinaria/save")
-    public String saveVeterinaria(Veterinaria veterinaria,
-                              Model model){
+    public String saveEmploye(Veterinaria veterinaria,
+                              Model model) {
         //save
-        veterinariaService.saveVeterinaria(veterinaria);
+        veterinariaService.create(veterinaria);
 
         //list
-        List<Veterinaria> veterinarias = veterinariaService.getAll();
-        model.addAttribute("veterinarias",veterinarias);
+        List<Veterinaria> veterinarias = veterinariaService.findAll();
+        model.addAttribute("veterinarias", veterinarias);
         return "veterinaria";
     }
-    /*
-     @GetMapping("usuario/add")
-        public String addUsuario(Model model){
-            model.addAttribute("usuario", new Usuario());
-          return "usuario";
-      }
-    */
+
+   /* @GetMapping("/veterinaria/add")
+    public String AddEmploye(Model model) {
+        model.addAttribute("veterinaria", new Veterinaria());
+
+        return "add-veterinaria";
+    }*/
+
     @GetMapping("/veterinaria/edit/{id}")
-    public String getVeterinariaForUpdate (@PathVariable String id,
-                                       Model model){
+    public String getVeterinariaForUpdate(@PathVariable String id,
+                                          Model model) {
 
-        Veterinaria currentVeterinaria = veterinariaService.findById(id);
-        return "veterinaria";
+        model.addAttribute("veterinaria", veterinariaService.findById(id));
+        return "edit-veterinaria";
     }
-
 
     @PostMapping("/veterinaria/update/{id}")
-    public String updateVeterinarias(@PathVariable String id,
+    public String updateUsuarios(@PathVariable String id,
                                  Veterinaria veterinaria,
-                                 Model model){
+                                 Model model) {
 
         //Update
-        veterinariaService.updateVeterinaria(veterinaria);
+        veterinariaService.update(veterinaria);
+
 
         //list
-        List<Veterinaria> veterinarias = veterinariaService.getAll();
+        List<Veterinaria> veterinarias = veterinariaService.findAll();
         model.addAttribute("veterinarias", veterinarias);
         return "veterinaria";
     }
 
     @GetMapping("/veterinaria/delete/{id}")
-    public String  deleteUsuario(@PathVariable String id,
-                                 Model model){
+    public String deleteVeterinaria(@PathVariable String id,
+                                    Model model) {
+        model.addAttribute("veterinaria", veterinariaService.findById(id));
 
-       Veterinaria currentVeterinaria = veterinariaService.findById(id);
 
         //Delete
-        veterinariaService.deleteVeterinaria(currentVeterinaria);
+        veterinariaService.delete(id);
 
         //list
-        List<Veterinaria> veterinarias = veterinariaService.getAll();
-        model.addAttribute("veterinarias",veterinarias);
+        List<Veterinaria> veterinarias = veterinariaService.findAll();
+        model.addAttribute("veterinarias", veterinarias);
 
-        return "redirect:/veterinaria";
+        return "veterinaria";
     }
-
-
 }

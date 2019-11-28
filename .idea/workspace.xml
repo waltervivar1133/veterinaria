@@ -2,35 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1fd46140-d2b3-4be0-a30c-79899e25910a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_3_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_1_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_1_9_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_1_9_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/BaseRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/JdbcSupervisorRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/JdbcUsuarioRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/JdbcVeterinariaRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/SupervisorRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/UsuarioRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/VeterinariaRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/BaseService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data-h2.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/schema-h2.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/edit-usuario.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vet.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Vet.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/UsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/UsuarioController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/model/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/model/Usuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/service/UsuarioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/UsuarioService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/usuario.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/usuario.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/Vet.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/controller/UsuarioController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/controller/UsuarioController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/model/Usuario.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/model/Usuario.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/service/UsuarioService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/service/UsuarioService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/usuario.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/usuario.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/veterinariaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/veterinariaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/model/Veterinaria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/model/Veterinaria.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/JdbcVeterinariaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/JdbcVeterinariaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/service/VeterinariaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/VeterinariaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data-h2.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data-h2.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/schema-h2.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/schema-h2.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/veterinaria.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/veterinaria.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/controller/Index.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/controller/Index.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -141,7 +121,7 @@
       <workItem from="1572357522758" duration="3173000" />
       <workItem from="1572480896977" duration="1413000" />
       <workItem from="1572482330674" duration="6346000" />
-      <workItem from="1574899156040" duration="6337000" />
+      <workItem from="1574899156040" duration="9110000" />
     </task>
     <servers />
   </component>

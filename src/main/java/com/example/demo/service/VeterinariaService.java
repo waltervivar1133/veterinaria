@@ -3,55 +3,43 @@ package com.example.demo.service;
 
 import com.example.demo.model.Usuario;
 import com.example.demo.model.Veterinaria;
+import com.example.demo.repository.JdbcUsuarioRepository;
+import com.example.demo.repository.JdbcVeterinariaRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 @Service
-public class VeterinariaService {
+public class VeterinariaService implements BaseService<Veterinaria,String> {
 
-    List<Veterinaria> veterinarias = new ArrayList<>(
-            Arrays.asList(
-                    new Veterinaria("1",
-                            "Veteri1",
-                            "Surco",
-                            "jean96rq@gmail.com",
-                            "9919205154")
-
-            )
-    );
+    @Autowired
+    private JdbcVeterinariaRepository jdbcVeterinariaRepository;
 
 
-    public List<Veterinaria> getAll(){
-        return veterinarias;
+    @Override
+    public void create(Veterinaria veterinaria) {
+        jdbcVeterinariaRepository.create(veterinaria);
     }
 
-    public void saveVeterinaria(Veterinaria veterinaria){
-        veterinarias.add(veterinaria);
+    @Override
+    public void update(Veterinaria veterinaria) {
+      jdbcVeterinariaRepository.update(veterinaria);
     }
 
-    public void deleteVeterinaria(Veterinaria veterinaria){
-
-      veterinarias.remove(veterinaria);
+    @Override
+    public void delete(String id) {
+      jdbcVeterinariaRepository.delete(id);
     }
 
-    public void updateVeterinaria(Veterinaria veterinaria){
-       Veterinaria currentVeterinaria = findById(veterinaria.getId());
-        int index = veterinarias.indexOf(currentVeterinaria);
-        veterinaria.setId(currentVeterinaria.getId());
-       veterinarias.set(index, veterinaria);
+    @Override
+    public List<Veterinaria> findAll() {
+        return jdbcVeterinariaRepository.findAll();
     }
 
-    public Veterinaria findById(String id){
-        Veterinaria veterinaria = veterinarias.stream()
-                .filter(s -> s.getId()
-                        .equalsIgnoreCase(id))
-                .findFirst()
-                .orElseGet(null);
-        return veterinaria;
+    @Override
+    public Veterinaria findById(String id) {
+        return jdbcVeterinariaRepository.findById(id);
     }
-
-
 }
-
