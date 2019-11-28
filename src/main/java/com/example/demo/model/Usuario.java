@@ -11,8 +11,8 @@ import lombok.NoArgsConstructor;
 @Data
 public class Usuario {
     private String id;
-    private String nombres;
-    private String apellidos;
+    private String nombre;
+    private String apellido;
     private String correo;
     private String celular;
     private String clave;

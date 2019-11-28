@@ -2,6 +2,8 @@ package com.example.demo.service;
 
 
 import com.example.demo.model.Usuario;
+import com.example.demo.repository.JdbcUsuarioRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
@@ -11,57 +13,34 @@ import java.util.List;
 
 
 @Service
-public class UsuarioService {
+public class UsuarioService implements BaseService<Usuario,String> {
 
-    List<Usuario> usuarios = new ArrayList<>(
-            Arrays.asList(
-                    new Usuario("1",
-                            "Jean Franco",
-                            "Rojas Quiroz",
-                            "jean96rq@gmail.com",
-                            "123456",
-                            "9919205154"),
-                     new Usuario("2",
-                                         "Jean ",
-                                         "Rojas ",
-                                         "jeasn96rq@gmail.com",
-                                         "123456",
-                                         "9919205154")
-
-            )
-
-    );
+    @Autowired
+    private JdbcUsuarioRepository jdbcUsuarioRepository;
 
 
-    public List<Usuario> getAll(){
-        return usuarios;
+    @Override
+    public void create(Usuario usuario) {
+        jdbcUsuarioRepository.create(usuario);
     }
 
-
-    public void saveUsuario(Usuario usuario){
-        usuarios.add(usuario);
+    @Override
+    public void update(Usuario usuario) {
+        jdbcUsuarioRepository.update(usuario);
     }
 
-    public void deleteUsuario(Usuario usuario){
-
-        usuarios.remove(usuario);
+    @Override
+    public void delete(String id) {
+        jdbcUsuarioRepository.delete(id);
     }
 
-    public void updateUsuario(Usuario usuario){
-        Usuario currentUsuario = findById(usuario.getId());
-        int index = usuarios.indexOf(currentUsuario);
-        usuario.setId(currentUsuario.getId());
-        usuarios.set(index, usuario);
+    @Override
+    public List<Usuario> findAll() {
+        return jdbcUsuarioRepository.findAll();
     }
 
-    public Usuario findById(String id){
-        Usuario usuario = usuarios.stream()
-                .filter(s -> s.getId()
-                        .equalsIgnoreCase(id))
-                .findFirst()
-                .orElseGet(null);
-        return usuario;
+    @Override
+    public Usuario findById(String id) {
+        return jdbcUsuarioRepository.findById(id);
     }
-
-
 }
