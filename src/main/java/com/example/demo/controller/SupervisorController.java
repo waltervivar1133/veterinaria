@@ -19,73 +19,70 @@ public class SupervisorController {
     SupervisorService supervisorService;
 
     @GetMapping("/supervisor")
-    public String getSupervisorList(Model model){
-        //list
-
-        List<Supervisor> supervisors = supervisorService.getAll();
-        model.addAttribute("supervisors",supervisors);
+    public String getSupervisors(Model model) {
         model.addAttribute("supervisor", new Supervisor());
-
-
+        model.addAttribute("supervisors", supervisorService.findAll());
         return "supervisor";
     }
 
     @PostMapping("/supervisor/save")
-    public String saveSupervisor(Supervisor supervisor,
-                              Model model){
+    public String saveSupervisors(Supervisor supervisor,
+                                  Model model) {
         //save
-        supervisorService.saveSupervisor(supervisor);
+        supervisorService.create(supervisor);
 
         //list
-        List<Supervisor> supervisors = supervisorService.getAll();
-        model.addAttribute("supervisors",supervisors);
+        List<Supervisor> supervisors = supervisorService.findAll();
+        model.addAttribute("supervisors", supervisors);
         return "supervisor";
     }
-    /*
-     @GetMapping("usuario/add")
-        public String addUsuario(Model model){
-            model.addAttribute("usuario", new Usuario());
-          return "usuario";
-      }
-    */
+
+   /* @GetMapping("/supervisor/add")
+    public String AddSupervisor(Model model) {
+        model.addAttribute("supervisor", new Supervisor());
+
+        return "supervisor";
+    }*/
+
     @GetMapping("/supervisor/edit/{id}")
-    public String getSupervisorForUpdate (@PathVariable String id,
-                                       Model model){
+    public String getSupervisorForUpdate(@PathVariable String id,
+                                         Model model) {
 
-       Supervisor currentSupervisor = supervisorService.findById(id);
-        return "supervisor";
+        model.addAttribute("supervisor", supervisorService.findById(id));
+        return "edit-supervisor";
     }
-
 
     @PostMapping("/supervisor/update/{id}")
-    public String updateSupervisor(@PathVariable String id,
-                                 Supervisor supervisor,
-                                 Model model){
+    public String updateSupervisors(@PathVariable String id,
+                                    Supervisor supervisor,
+                                    Model model) {
 
         //Update
-        supervisorService.updateSupervisor(supervisor);
+        supervisorService.update(supervisor);
+
 
         //list
-        List<Supervisor> supervisors = supervisorService.getAll();
-        model.addAttribute("supervisors",supervisors);
-        return "usuario";
+        List<Supervisor> supervisors = supervisorService.findAll();
+        model.addAttribute("supervisors", supervisors);
+        return "supervisor";
     }
 
     @GetMapping("/supervisor/delete/{id}")
-    public String  deleteSupervisor(@PathVariable String id,
-                                 Model model){
+    public String deleteSupervisor(@PathVariable String id,
+                                   Model model) {
+        model.addAttribute("supervisor", supervisorService.findById(id));
 
-       Supervisor currentSupervisor = supervisorService.findById(id);
 
         //Delete
-        supervisorService.deleteSupervisor(currentSupervisor);
+        supervisorService.delete(id);
 
         //list
-        List<Supervisor> supervisors = supervisorService.getAll();
-        model.addAttribute("supervisors",supervisors);
+        List<Supervisor> supervisors = supervisorService.findAll();
+        model.addAttribute("supervisors", supervisors);
 
-        return "redirect:/supervisor";
+        return "supervisor";
     }
+
 
 
 }

@@ -13,3 +13,11 @@ values ('Perros Anonimos', 'Callao','jeanrq@gmail.com','999999');
 insert into veterinaria(nombre,distrito,correo,numero)
 values ('Gatos venezolanos', 'San miguel','jeaq@gmail.com','999999');
 
+
+insert into supervisor(nombre, apellido,correo,clave)
+values ('Jean', 'Rojas Quiroz','jean96rq@gmail.com','123456');
+insert into supervisor(nombre, apellido,correo,clave)
+values ('Julio', 'Bolaños','ajulio@gmail.com','123456');
+insert into supervisor(nombre, apellido,correo,clave)
+values ('Walter vivar', 'vivar','walter96rq@gmail.com','123456');
+

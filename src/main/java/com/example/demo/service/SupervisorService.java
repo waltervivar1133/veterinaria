@@ -3,6 +3,8 @@ package com.example.demo.service;
 
 import com.example.demo.model.Supervisor;
 import com.example.demo.model.Usuario;
+import com.example.demo.repository.JdbcSupervisorRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -12,46 +14,33 @@ import java.util.List;
 
 
 @Service
-public class SupervisorService {
+public class SupervisorService implements BaseService<Supervisor,String> {
 
-    List<Supervisor> supervisors = new ArrayList<>(
-            Arrays.asList(
-                    new Supervisor("1",
-                            "Jean Franco",
-                            "Rojas Quiroz",
-                            "jean96rq@gmail.com",
-                            "123456")
+    @Autowired
+    private JdbcSupervisorRepository  jdbcSupervisorRepository;
+    @Override
+    public void create(Supervisor supervisor) {
+        jdbcSupervisorRepository.create(supervisor);
 
-            )
-    );
-
-    public List<Supervisor> getAll(){
-        return supervisors;
     }
 
-
-    public void saveSupervisor(Supervisor supervisor){
-        supervisors.add(supervisor);
+    @Override
+    public void update(Supervisor supervisor) {
+        jdbcSupervisorRepository.update(supervisor);
     }
 
-    public void deleteSupervisor(Supervisor supervisor){
-
-       supervisors.remove(supervisor);
+    @Override
+    public void delete(String id) {
+        jdbcSupervisorRepository.delete(id);
     }
 
-    public void updateSupervisor(Supervisor supervisor){
-        Supervisor currentSupervisor = findById(supervisor.getId());
-        int index = supervisors.indexOf(currentSupervisor);
-        supervisor.setId(currentSupervisor.getId());
-        supervisors.set(index, supervisor);
+    @Override
+    public List<Supervisor> findAll() {
+        return jdbcSupervisorRepository.findAll();
     }
 
-    public Supervisor findById(String id){
-        Supervisor supervisor = supervisors.stream()
-                .filter(s -> s.getId()
-                        .equalsIgnoreCase(id))
-                .findFirst()
-                .orElseGet(null);
-        return supervisor;
+    @Override
+    public Supervisor findById(String id) {
+        return jdbcSupervisorRepository.findById(id);
     }
 }

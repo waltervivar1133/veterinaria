@@ -38,8 +38,8 @@
 
 <section class="bannerClientes">
     <div class="container">
-        <h1>Bienvenido al <br>sistema de clientes</h1>
-        <a th:href="@{supervisor/add}"  class="btn btn btn-outline-primary btn-sm "  data-toggle="modal" data-target="#exampleModal" >Agregar cliente</a>
+        <h1>Bienvenido al <br>sistema de Supervisores</h1>
+        <a th:href="@{/supervisor}"  class="btn btn btn-outline-primary btn-sm "  data-toggle="modal" data-target="#exampleModal" >Agregar cliente</a>
     </div>
 </section>
 
@@ -64,8 +64,8 @@
                 <tbody>
                 <tr th:each="supervisor: ${supervisors}">
                     <th scope="row" th:text="${supervisor.id}"></th>
-                    <td th:text="${supervisor.nombres}"></td>
-                    <td th:text="${supervisor.apellidos}"></td>
+                    <td th:text="${supervisor.nombre}"></td>
+                    <td th:text="${supervisor.apellido}"></td>
                     <td th:text="${supervisor.correo}"></td>
                     <td th:text="${supervisor.clave}"></td>
 
@@ -73,7 +73,7 @@
                     <td>
                         <a th:href="@{/supervisor/edit/{id}
                                     (id=${supervisor.id})}"
-                           class="btn btn btn-outline-primary btn-sm"  data-toggle="modal" data-target="#exampleModalCenter">Editar</a></td>
+                           class="btn btn btn-outline-primary btn-sm" >Editar</a></td>
                     <td><a class="btn btn btn-outline-primary btn-sm"
                            th:href="@{/supervisor/delete/{id}
                      (id=${supervisor.id})}" >Eliminar</a></td>
@@ -96,7 +96,7 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Agregando un usuario</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -118,11 +118,11 @@
                         </div>
                         <div class="form-group col-md-6">
                             <label for="nombres">Nombre</label>
-                            <input type="text" class="form-control" id="nombres" th:field="*{nombres}" >
+                            <input type="text" class="form-control" id="nombres" th:field="*{nombre}" >
                         </div>
                         <div class="form-group col-md-6">
                             <label for="apellidos">Apellidos</label>
-                            <input type="text" class="form-control" id="apellidos"th:field="*{apellidos}" >
+                            <input type="text" class="form-control" id="apellidos"th:field="*{apellido}" >
                         </div>
                     </div>
                     <div class="form-row">
@@ -131,10 +131,14 @@
                             <input type="email" class="form-control" id="correo" th:field="*{correo}">
                         </div>
                     </div>
-                    <div class="form-group">
-                        <label for="clave">clave</label>
-                        <input type="text" class="form-control" id="clave"th:field="*{clave}">
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                            <label for="clave">Clave</label>
+                            <input type="text" class="form-control" id="clave" th:field="*{clave}">
+                        </div>
                     </div>
+
+
 
 
 
@@ -156,73 +160,6 @@
     </div>
 </div>
 
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalCenterTitle">Editar Cliente</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-
-                <form action="#" method="post"
-                      th:object="${supervisor}"
-                      th:action="@{/supervisor/update/{id} (id=${supervisor.id})} "
-
-                >
-
-
-                    <div class="form-row ">
-
-                        <div class="form-group col-md-12">
-                            <label for="id">Codigo</label>
-                            <input type="text" class="form-control" id="id" placeholder="" th:field="*{id}"
-                            >
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="nombres">Nombre</label>
-                            <input type="text" class="form-control" id="nombres" th:field="*{nombres}" >
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="apellidos">Apellidos</label>
-                            <input type="text" class="form-control" id="apellidos"th:field="*{apellidos}" >
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group col-md-12">
-                            <label for="correo">Correo</label>
-                            <input type="email" class="form-control" id="correo" th:field="*{correo}">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="clave">celular</label>
-                        <input type="text" class="form-control" id="clave"th:field="*{clave}">
-                    </div>
-
-
-
-
-                    <div class="form-group">
-
-                        <p class="text-left"><button type="submit" class="btn btn btn-outline-primary">Editar</button>  <button type="button" class="btn btn btn-outline-primary " data-dismiss="modal">Close</button></p>
-
-
-                    </div>
-
-
-                </form>
-
-
-            </div>
-
-
-
-
-        </div>
-    </div>
-</div>
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
