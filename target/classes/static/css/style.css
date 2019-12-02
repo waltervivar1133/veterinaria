@@ -1,49 +1,100 @@
 menu{
     background-color: #fef7ed;
 }
-.menu .bg-dark{
+/*.menu .bg-dark{
     background-color:  transparent!important;
 }
 .navbar-dark a{
     color:#3a54b4!important;
-}
+}*/
 header{
-    background-color: transparent;
+    background-color:#B2DFDB;
+}
+.barra{
+    background-color:#B2DFDB;
+    color: #212121;
+}
+.barra a{
+
+    color: #212121;
+}
+.barra a:hover{
+
+    color: #FFFFff;
 }
 
 .navbar-dark a:hover{
     color:#ff8a79!important;
 }
 
-.navbar-dark .navbar-toggler button {
+
+
+.carousel-indicators li {
+    width: 15px!important;
+    height: 15px!important;
+    border-radius: 100%!important;
+
+}
+
+.boton-iniciarSesion{
+    background-color: #FF5722!important;
+    color: #FFFFFF!important;
+}
+.boton-iniciarSesion:hover{
+    background-color: #FFFFff!important;
+    color: #FF5722!important;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.24),0 1px 1px 0 rgba(0,0,0,0.16)!important;
+    transition: 0.5s;
+
+}
+
+
+
+
+/*.navbar-dark .navbar-toggler button {
    
     color: #3a54b4!important;
     border-color:#3a54b4!important;
-}
-.slider .btn-group-lg>.btn, .btn-lg {
-   
+}*/
+/*.slider .btn-group-lg>.btn, .btn-lg {
+
     border-radius:0rem !important;
     box-shadow: 0 1px 1px 0 rgba(0,0,0,0.24),0 1px 1px 0 rgba(0,0,0,0.16);
-   
+
 }
 .slider .btn-group-lg>.btn, .btn-lg:hover {
     background-color: #3a54b4!important;
     color: white!important;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.24),0 2px 2px 0 rgba(0,0,0,0.16);
    
-}
+}*/
 
 
 
 
 .slider{
-    
-	
-   
-	height:100%;
- 
-    max-height: 100%;
-    background-color: #fef7ed;
+
+    background:#00796B;
+    width: 100%;
+    min-height:400px;
+    height: 100%;
+
+
+
+}
+.slider-contenido{
+    position: absolute;
+    top:40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 50%;
+    text-align: center;
+
+
+}
+.slider-contenido p{
+    color: #B2DFDB;
+    font-size: 1.5em;
 }
 .texto-pricipal {
     padding-top: 25%;
@@ -57,9 +108,7 @@ header{
     margin-top: 10px;
     
 }
-.slider img{
-    padding: 5%;
-}
+
 .quienestexto-pricipal{
     
     padding-top: 20%;
@@ -149,6 +198,7 @@ header{
     font-size: 3.2em;
 }
 
+/*
 .tablaClientes  .btn-group-sm>.btn, .btn-sm {
    
     border-radius:0rem !important;
@@ -175,6 +225,7 @@ header{
    
 }
 
+*/
 
 .bannerAdministradores{
     background:url(../img/g3.jpg) no-repeat center center;

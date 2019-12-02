@@ -8,25 +8,39 @@
 <header class="fixed-top">
 <section class="menu">
 
-<div class="container">
-        <nav class="container navbar navbar-dark navbar-expand-md  bg-dark">
+<div class="container-fluid">
+        <nav class=" container-fluid navbar barra navbar-expand-md">
                 <a class="navbar-brand" href="#">Fixed navbar</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                   <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="administrador.html">Buscar</a>
-                    </li>
-                  
+
                   </ul>
+
+                    <ul class="navbar-nav justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Nosotros</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Buscar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contactanos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn boton-iniciarSesion" href="#">Salir</a>
+                        </li>
+
+                    </ul>
                  
                 </div>
               </nav>
@@ -37,26 +51,16 @@
 
 <body>
    
-    <section class="slider paddin-50">
+    <section class="slider">
+            <div class="slider-contenido">
 
-    
-        <div class="container">
-            <div class="row">
-            <div class="col-md-6 ">
-                <div class="texto-pricipal">
-                <h2>El amor es una palabra de cuatro patas.</h2>
-                <div class="margin-50 ">
-                       <p class="bnes"> <a class="btn btn btn-outline-primary btn-lg">Ingresar</a>
-                        <a  th:href="@{/administrador}" class="btn btn btn-outline-primary btn-lg" >Unirme</a>
-                      </p>
-                </div>
+
+                <p>
+                    Con esta aplicación web podras buscar Veterinarias, centros de adopción y campañas cerca a tu distrito.
+                </p>
+                <a class="btn btn boton-iniciarSesion" href="#">Ya quiero buscar</a>
+
             </div>
-            </div>
-            <div class="col-md-6">
-                <p><img class="img-fluid rounded-circle" src="/img/img1.jpg" alt=""></p>
-            </div>
-        </div>
-        </div>
 
     </section>
 
