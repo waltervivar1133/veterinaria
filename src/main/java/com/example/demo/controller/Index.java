@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class Index {
 
-    @GetMapping({"/", "/index"})
+    @GetMapping({"/", "/iniciarSesion"})
     public String index(){
-       return "index";
+       return "iniciarSesion";
     }
 
 }

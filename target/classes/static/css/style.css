@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap');
+
 menu{
     background-color: #fef7ed;
 }
@@ -9,14 +11,17 @@ menu{
 }*/
 header{
     background-color:#B2DFDB;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 .barra{
     background-color:#B2DFDB;
     color: #212121;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 .barra a{
 
     color: #212121;
+    font-size: 1.3em;
 }
 .barra a:hover{
 
@@ -76,46 +81,46 @@ header{
 
     background:#00796B;
     width: 100%;
-    min-height:400px;
     height: 100%;
+    font-family: 'Open Sans Condensed', sans-serif;
 
 
 
 }
 .slider-contenido{
-    position: absolute;
-    top:40%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    max-width: 50%;
+
+    padding: 150px 100px 100px 100px;
     text-align: center;
+
 
 
 }
 .slider-contenido p{
     color: #B2DFDB;
-    font-size: 1.5em;
+    font-size: 1.7em;
+}
+
+.slider-contenido a{
+
+    font-size: 1.2em;
 }
 .texto-pricipal {
-    padding-top: 25%;
-    color: #3a54b4;
+    color: #404040;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 3.5em;
 
 }
-.texto-pricipal h2 {
-    font-size: 3.5em;
-}
-.texto-pricipal a{
-    margin-top: 10px;
-    
-}
+
+
 
 .quienestexto-pricipal{
     
     padding-top: 20%;
 }
 .quienestexto {
-    font-size: 1.3em;
-        color: #3a54b4;
+    font-size: 1.1em;
+        color:#555555;
+
 
 }
 .margin-50{
@@ -126,18 +131,22 @@ header{
 }
 
 .registro2{
-    background:url(../img/img7.jpg) no-repeat center center;
     height: 100%;
     width: 100%;
-   
-    background-size: cover;
-    
+
 
 }
 .registro2 label{
     color: #3a54b4;
 }
+.parallax{
+    background:#fff fixed no-repeat 50% 50%;
+    background-size: cover;
 
+}
+#section1{
+    background-image: url("../img/img6.jpg");
+}
 
 @media (max-width: 700px) { 
     .texto-pricipal {
@@ -248,6 +257,23 @@ header{
     background-size: cover;
 
    
+
+}
+.inicio{
+    height: 100vh;
+}
+.contenedor-login{
+    margin: 100px;
+}
+
+footer{
+    background: #161c27;
+    color: #FFFFff;
+}
+
+footer ul{
+    background-color: #1c2331;
+    color: #FFFFff;
 
 }
 
