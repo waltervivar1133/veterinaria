@@ -16,7 +16,7 @@ public class Index {
     public String index(){
         return "administrador";
     }
-@GetMapping({"/buscarVeterinaria"})
+    @GetMapping({"/buscarVeterinaria"})
     public String buscar(){
         return "buscarVeterinaria";
     }

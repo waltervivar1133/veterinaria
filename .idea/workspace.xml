@@ -4,45 +4,7 @@
     <list default="true" id="1fd46140-d2b3-4be0-a30c-79899e25910a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/Index.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/Index.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/veterinariaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/veterinariaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/BaseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/BaseRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/JdbcSupervisorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/JdbcSupervisorRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/JdbcUsuarioRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/JdbcUsuarioRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/JdbcVeterinariaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/JdbcVeterinariaRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/service/BaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/BaseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/service/SupervisorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/SupervisorService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/service/UsuarioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/UsuarioService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/service/VeterinariaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/VeterinariaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/administrador.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/administrador.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/buscarVeterinaria.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/buscarVeterinaria.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/edit-supervisor.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/edit-supervisor.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/edit-usuario.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/edit-usuario.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/nav.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/supervisor.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/supervisor.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/usuario.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/usuario.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/veterinaria.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/veterinaria.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/controller/Index.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/controller/Index.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/controller/veterinariaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/controller/veterinariaController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/repository/BaseRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/repository/BaseRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/repository/JdbcSupervisorRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/repository/JdbcSupervisorRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/repository/JdbcUsuarioRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/repository/JdbcUsuarioRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/repository/JdbcVeterinariaRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/repository/JdbcVeterinariaRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/service/BaseService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/service/BaseService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/service/SupervisorService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/service/SupervisorService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/service/UsuarioService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/service/UsuarioService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/service/VeterinariaService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/service/VeterinariaService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/administrador.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/administrador.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/buscarVeterinaria.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/buscarVeterinaria.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/edit-supervisor.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/edit-supervisor.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/edit-usuario.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/edit-usuario.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/fragments/nav.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/supervisor.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/supervisor.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/usuario.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/usuario.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/veterinaria.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/veterinaria.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -159,7 +121,7 @@
       <workItem from="1575090990767" duration="5218000" />
       <workItem from="1575247881191" duration="21802000" />
       <workItem from="1575292179040" duration="35465000" />
-      <workItem from="1575375851820" duration="5685000" />
+      <workItem from="1575375851820" duration="6592000" />
     </task>
     <servers />
   </component>
