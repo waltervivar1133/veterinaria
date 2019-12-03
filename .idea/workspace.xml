@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1fd46140-d2b3-4be0-a30c-79899e25910a" name="Default Changelist" comment="">
-<<<<<<< HEAD
+
       <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/resource/SupervisorResource.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/resource/UsuarioResource.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/resource/VetResource.java" afterDir="false" />
@@ -12,12 +12,12 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/Index.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/Index.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/supervisor.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/supervisor.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/controller/Index.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/controller/Index.class" afterDir="false" />
-=======
+
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/Index.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/Index.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/administrador.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/administrador.html" afterDir="false" />
-<<<<<<< HEAD
-=======
+
+
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/buscarVeterinaria.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/buscarVeterinaria.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/edit-supervisor.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/edit-supervisor.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/edit-usuario.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/edit-usuario.html" afterDir="false" />
@@ -46,8 +46,7 @@
       <change beforePath="$PROJECT_DIR$/target/classes/templates/supervisor.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/supervisor.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/usuario.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/usuario.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/veterinaria.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/veterinaria.html" afterDir="false" />
->>>>>>> 69243c59cf3a090eb176cf62990a522d081681b9
->>>>>>> 558ee271775a217835d66a75eefdb30e28036b43
+
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -164,18 +163,16 @@
       <workItem from="1575090990767" duration="5218000" />
       <workItem from="1575247881191" duration="21802000" />
       <workItem from="1575292179040" duration="35465000" />
-<<<<<<< HEAD
+
       <workItem from="1575375851820" duration="6592000" />
-=======
-<<<<<<< HEAD
+
       <workItem from="1575375851820" duration="417000" />
       <workItem from="1575378347748" duration="310000" />
       <workItem from="1575378736923" duration="178000" />
       <workItem from="1575379320833" duration="2939000" />
-=======
+
       <workItem from="1575375851820" duration="5685000" />
->>>>>>> 69243c59cf3a090eb176cf62990a522d081681b9
->>>>>>> 558ee271775a217835d66a75eefdb30e28036b43
+
     </task>
     <servers />
   </component>
