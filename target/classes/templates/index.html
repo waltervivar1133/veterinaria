@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head th:insert="fragments/head" >
 
 </head>
@@ -18,7 +18,7 @@
                 <p>
                     Con esta aplicación web podrás buscar Veterinarias, centros de adopción y<br> campañas cerca a tu distrito.
                 </p>
-                <a class="btn btn boton-iniciarSesion" href="#">Busca Ahora</a>
+                <a class="btn btn boton-iniciarSesion" th:href="@{/buscarVeterinaria}">Busca Ahora</a>
 
             </div>
 
@@ -56,7 +56,7 @@
               <div class="form-row ">
                   <div class="form-group col-md-6">
                     <label for="inputEmail4">Nombre</label>
-                    <input type="text" class="form-control" id="inputEmail4" placeholder="Nombre">
+                    <input type="text" class="form-control" id="nombre" placeholder="Nombre">
                   </div>
                   <div class="form-group col-md-6">
                     <label for="inputPassword4">Apellidos</label>

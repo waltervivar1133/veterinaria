@@ -42,10 +42,7 @@ public class VeterinariaService implements BaseService<Veterinaria,String> {
         return jdbcVeterinariaRepository.findById(id);
     }
 
-    @Override
-    public List<Veterinaria> findByDistrito(String distrito) {
-        return jdbcVeterinariaRepository.findByDistrito(distrito);
-    }
+
 
 
 }

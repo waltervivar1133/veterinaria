@@ -8,13 +8,20 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class Index {
 
     @GetMapping({"/", "/index"})
+
     public String index(){
        return "index";
     }
 
     @GetMapping({ "/administrador"})
-    public String admin(){
+    public String admin() {
         return "administrador";
+    }
+    
+@GetMapping({"/buscarVeterinaria"})
+    public String buscar(){
+        return "buscarVeterinaria";
+
     }
 
 }

@@ -61,10 +61,7 @@ public class JdbcSupervisorRepository implements SupervisorRepository {
         return supervisor;
     }
 
-    @Override
-    public List<Supervisor> findByDistrito(String s) {
-        return null;
-    }
+
 
 
 }

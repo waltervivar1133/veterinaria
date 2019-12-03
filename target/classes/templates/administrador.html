@@ -2,7 +2,7 @@
 
 
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" >
+<html lang="en" xmlns:th="http://www.thymeleaf.org" >
 <head th:insert="fragments/head">
 
        
@@ -14,7 +14,7 @@
 
 </header>
 
-<section class="banner">
+<section class="banner" style="padding: 100px;">
 
     <h1>Bienvenido al sistema de <br> mantenimiento</h1>
 
@@ -32,7 +32,7 @@
             <img src="/img/img5.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title text-center">Usuarios</h5>
-                <p class="bnes text-center"> <a  th:href="@{buscarVeterinaria}"   class="btn btn btn-outline-primary btn-lg">Administrar</a></p>
+                <p class="bnes text-center"> <a  th:href="@{/usuario}"   class="btn btn btn-outline-primary btn-lg">Administrar</a></p>
           </div>
         </div>
       </div>
@@ -56,38 +56,9 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 col-sm-6">
-              <div class="card mb-3">
-                  <img src="/img/img5.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                      <h5 class="card-title text-center">Campañas</h5>
-                      <p class="bnes text-center"> <a class="btn btn btn-outline-primary btn-lg">Administrar</a></p>
+         
 
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="card mb-3">
-                    <img src="/img/img5.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Clientes</h5>
-                   
-                        <p class="bnes text-center"> <a class="btn btn btn-outline-primary btn-lg">Administrar</a></p>
 
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-6">
-                  <div class="card mb-3">
-                      <img src="/img/img5.jpg" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title text-center">Clientes</h5>
-                        <p class="bnes text-center"> <a class="btn btn btn-outline-primary btn-lg">Administrar</a></p>
-
-                        
-                    </div>
-                  </div>
-                </div>
 
     </div>
 
