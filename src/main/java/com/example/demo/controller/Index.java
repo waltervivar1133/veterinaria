@@ -7,9 +7,14 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class Index {
 
-    @GetMapping({"/", "/administrador"})
+    @GetMapping({"/", "/index"})
     public String index(){
-       return "administrador";
+       return "index";
+    }
+
+    @GetMapping({ "/administrador"})
+    public String admin(){
+        return "administrador";
     }
 
 }

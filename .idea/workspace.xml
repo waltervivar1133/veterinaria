@@ -2,13 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1fd46140-d2b3-4be0-a30c-79899e25910a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/nav.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/resource/SupervisorResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/resource/UsuarioResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/resource/VetResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/demo/resource/UsuarioResource.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/demo/resource/VetResource.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/administrador.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/administrador.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/edit-supervisor.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/edit-supervisor.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/edit-usuario.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/edit-usuario.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/Index.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/Index.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/supervisor.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/supervisor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/controller/Index.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/controller/Index.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,9 +35,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -72,14 +74,14 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\AlumnoDG\Documents\Vet\src\main\resources\static" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\AlumnoDG\Documents\Vet\src\main\resources\static" />
       <recent name="C:\Users\ASUS\IdeaProjects\Vet\src\main\resources\img" />
       <recent name="C:\Users\ASUS\IdeaProjects\Vet\src\main\resources\css" />
       <recent name="C:\Users\ASUS\IdeaProjects\Vet\src\main\resources\templates" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\AlumnoDG\Documents\Vet\src\main\resources\static" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -126,6 +128,9 @@
       <workItem from="1575247881191" duration="21802000" />
       <workItem from="1575292179040" duration="35465000" />
       <workItem from="1575375851820" duration="417000" />
+      <workItem from="1575378347748" duration="310000" />
+      <workItem from="1575378736923" duration="178000" />
+      <workItem from="1575379320833" duration="2939000" />
     </task>
     <servers />
   </component>
