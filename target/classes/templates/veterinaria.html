@@ -5,34 +5,8 @@
 </head>
 <body>
 
-<header class="fixed-top">
-    <section class="menu">
 
-        <div class="container">
-            <nav class="container navbar navbar-dark navbar-expand-md  bg-dark">
-                <a class="navbar-brand" href="#">Fixed navbar</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="administrador.html">Buscar</a>
-                        </li>
-
-                    </ul>
-
-                </div>
-            </nav>
-        </div>
-
-    </section>
+<header th:insert="fragments/nav" class="fixed-top">
 
 </header>
 

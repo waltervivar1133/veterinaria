@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1fd46140-d2b3-4be0-a30c-79899e25910a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/nav.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/veterinariaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/veterinariaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/model/Veterinaria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/model/Veterinaria.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/JdbcVeterinariaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/JdbcVeterinariaRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/service/VeterinariaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/VeterinariaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data-h2.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data-h2.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/schema-h2.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/schema-h2.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/veterinaria.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/veterinaria.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/controller/Index.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/controller/Index.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/administrador.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/administrador.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/edit-supervisor.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/edit-supervisor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/edit-usuario.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/edit-usuario.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/supervisor.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/supervisor.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +69,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -127,6 +125,7 @@
       <workItem from="1575090990767" duration="5218000" />
       <workItem from="1575247881191" duration="21802000" />
       <workItem from="1575292179040" duration="35465000" />
+      <workItem from="1575375851820" duration="417000" />
     </task>
     <servers />
   </component>
