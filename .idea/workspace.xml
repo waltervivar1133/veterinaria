@@ -74,14 +74,14 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\AlumnoDG\Documents\Vet\src\main\resources\static" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\AlumnoDG\Documents\Vet\src\main\resources\static" />
       <recent name="C:\Users\ASUS\IdeaProjects\Vet\src\main\resources\img" />
       <recent name="C:\Users\ASUS\IdeaProjects\Vet\src\main\resources\css" />
       <recent name="C:\Users\ASUS\IdeaProjects\Vet\src\main\resources\templates" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\AlumnoDG\Documents\Vet\src\main\resources\static" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -126,7 +126,7 @@
       <workItem from="1574899156040" duration="9110000" />
       <workItem from="1575090990767" duration="5218000" />
       <workItem from="1575247881191" duration="21802000" />
-      <workItem from="1575292179040" duration="17226000" />
+      <workItem from="1575292179040" duration="35465000" />
     </task>
     <servers />
   </component>

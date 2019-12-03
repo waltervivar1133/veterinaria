@@ -17,7 +17,6 @@ public class VeterinariaService implements BaseService<Veterinaria,String> {
     @Autowired
     private JdbcVeterinariaRepository jdbcVeterinariaRepository;
 
-
     @Override
     public void create(Veterinaria veterinaria) {
         jdbcVeterinariaRepository.create(veterinaria);
@@ -25,12 +24,12 @@ public class VeterinariaService implements BaseService<Veterinaria,String> {
 
     @Override
     public void update(Veterinaria veterinaria) {
-      jdbcVeterinariaRepository.update(veterinaria);
+        jdbcVeterinariaRepository.update(veterinaria);
     }
 
     @Override
     public void delete(String id) {
-      jdbcVeterinariaRepository.delete(id);
+            jdbcVeterinariaRepository.delete(id);
     }
 
     @Override
@@ -42,4 +41,11 @@ public class VeterinariaService implements BaseService<Veterinaria,String> {
     public Veterinaria findById(String id) {
         return jdbcVeterinariaRepository.findById(id);
     }
+
+    @Override
+    public List<Veterinaria> findByDistrito(String distrito) {
+        return jdbcVeterinariaRepository.findByDistrito(distrito);
+    }
+
+
 }

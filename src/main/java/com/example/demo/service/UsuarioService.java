@@ -43,4 +43,9 @@ public class UsuarioService implements BaseService<Usuario,String> {
     public Usuario findById(String id) {
         return jdbcUsuarioRepository.findById(id);
     }
+
+    @Override
+    public List<Usuario> findByDistrito(String s) {
+        return null;
+    }
 }

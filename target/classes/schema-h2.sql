@@ -11,6 +11,7 @@ create table veterinaria (
     id identity primary key,
     nombre varchar(100) not null,
     distrito varchar(100) not null,
+    direccion varchar(100) not null,
      correo varchar(100) not null,
     numero varchar(100) not null,
 

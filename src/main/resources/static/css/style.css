@@ -96,8 +96,12 @@ header{
 
 }
 .slider-contenido p{
-    color: #B2DFDB;
+    color: #FFFFff;
     font-size: 1.7em;
+}
+.slider-contenido h1{
+    color: #FFFFff;
+
 }
 
 .slider-contenido a{
@@ -125,6 +129,9 @@ header{
 }
 .margin-50{
     margin-top: 50px;
+}
+.margin-10{
+    margin-top: 10px;
 }
 .paddin-50{
     padding-top:80px;

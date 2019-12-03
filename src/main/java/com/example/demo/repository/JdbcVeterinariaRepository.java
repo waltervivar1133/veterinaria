@@ -17,16 +17,16 @@ public class JdbcVeterinariaRepository implements VeterinariaRepository {
 
     @Override
     public void create(Veterinaria veterinaria) {
-        final String sql = "insert into veterinaria(id,nombre, distrito ,correo,numero  ) values (?,?,?,?,?)";
-        jdbcTemplate.update(sql, veterinaria.getId(), veterinaria.getNombre(), veterinaria.getDistrito(),veterinaria.getCorreo(),veterinaria.getNumero());
+        final String sql = "insert into veterinaria(id,nombre, distrito,direccion,correo,numero  ) values (?,?,?,?,?,?)";
+        jdbcTemplate.update(sql, veterinaria.getId(), veterinaria.getNombre(), veterinaria.getDistrito(),veterinaria.getDireccion(),veterinaria.getCorreo(),veterinaria.getNumero());
 
     }
 
     @Override
     public void update(Veterinaria veterinaria) {
 
-        final String sql = "update veterinaria set nombre = ?, distrito = ? , correo = ? , numero = ? where id = ?";
-        jdbcTemplate.update(sql, veterinaria.getNombre(), veterinaria.getDistrito(), veterinaria.getCorreo(),veterinaria.getNumero(),veterinaria.getId());
+        final String sql = "update veterinaria set nombre = ?, distrito = ?,direccion = ? , correo = ? , numero = ? where id = ?";
+        jdbcTemplate.update(sql, veterinaria.getNombre(), veterinaria.getDistrito(),veterinaria.getDireccion(), veterinaria.getCorreo(),veterinaria.getNumero(),veterinaria.getId());
 
     }
 
@@ -49,11 +49,12 @@ public class JdbcVeterinariaRepository implements VeterinariaRepository {
         String id = resultSet.getString("id");
         String nombre = resultSet.getString("nombre");
         String distrito = resultSet.getString("distrito");
+        String direccion=   resultSet.getString("direccion");
         String correo = resultSet.getString("correo");
         String numero = resultSet.getString("numero");
 
 
-        return new Veterinaria(id, nombre,distrito,correo,numero);
+        return new Veterinaria(id, nombre,distrito,direccion,correo,numero);
     }
 
 
@@ -64,5 +65,13 @@ public class JdbcVeterinariaRepository implements VeterinariaRepository {
                 new Object[]{id},
                 JdbcVeterinariaRepository::VeterinariaRowMapper);
         return veterinaria;
+    }
+    @Override
+    public List<Veterinaria> findByDistrito(String distrito) {
+        final String sql = "select * from veterinaria where distrito=?";
+        List<Veterinaria> veterinarias  = jdbcTemplate.query(sql,
+                new Object[]{distrito},
+                JdbcVeterinariaRepository::VeterinariaRowMapper);
+        return veterinarias;
     }
 }

@@ -10,5 +10,6 @@ public interface BaseRepository<X,Y> {
 
     List<X> findAll();
     X findById(Y y);
+    List<X> findByDistrito(Y y);
 
 }

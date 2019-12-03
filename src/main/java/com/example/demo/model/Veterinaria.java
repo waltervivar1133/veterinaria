@@ -14,6 +14,7 @@ public class Veterinaria {
     private String id;
     private String nombre;
     private String distrito;
+    private String direccion;
     private String correo;
     private String numero;
 }

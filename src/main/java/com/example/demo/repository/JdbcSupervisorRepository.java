@@ -40,6 +40,8 @@ public class JdbcSupervisorRepository implements SupervisorRepository {
         return supervisors;
     }
 
+
+
     private static Supervisor SupervisorRowMapper(ResultSet resultSet, int i) throws SQLException {
         String id = resultSet.getString("id");
         String nombre = resultSet.getString("nombre");
@@ -58,4 +60,11 @@ public class JdbcSupervisorRepository implements SupervisorRepository {
                 JdbcSupervisorRepository::SupervisorRowMapper);
         return supervisor;
     }
+
+    @Override
+    public List<Supervisor> findByDistrito(String s) {
+        return null;
+    }
+
+
 }

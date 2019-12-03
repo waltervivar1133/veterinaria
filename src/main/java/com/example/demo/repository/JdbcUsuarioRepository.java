@@ -44,6 +44,7 @@ public class JdbcUsuarioRepository implements UsuarioRepository {
         return usuarios;
     }
 
+
     private static Usuario UsuarioRowMapper(ResultSet resultSet, int i) throws SQLException {
         String id = resultSet.getString("id");
         String nombre = resultSet.getString("nombre");
@@ -63,4 +64,10 @@ public class JdbcUsuarioRepository implements UsuarioRepository {
                 JdbcUsuarioRepository::UsuarioRowMapper);
         return usuario;
     }
+
+    @Override
+    public List<Usuario> findByDistrito(String s) {
+        return null;
+    }
+
 }

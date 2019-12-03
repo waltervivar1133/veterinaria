@@ -26,6 +26,13 @@ public class veterinariaController {
         model.addAttribute("veterinarias", veterinariaService.findAll());
         return "veterinaria";
     }
+    @GetMapping("/veterinaria/buscarVeterinaria/{distrito}")
+    public String getVeterinariasPorDistrito(@PathVariable String distrito,
+                                             Model model) {
+
+        model.addAttribute("veterinarias", veterinariaService.findByDistrito(distrito));
+        return "veterinaria";
+    }
 
     @PostMapping("/veterinaria/save")
     public String saveEmploye(Veterinaria veterinaria,
@@ -84,4 +91,7 @@ public class veterinariaController {
 
         return "veterinaria";
     }
+
+
+
 }
