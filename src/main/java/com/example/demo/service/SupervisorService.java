@@ -44,8 +44,5 @@ public class SupervisorService implements BaseService<Supervisor,String> {
         return jdbcSupervisorRepository.findById(id);
     }
 
-    @Override
-    public List<Supervisor> findByDistrito(String s) {
-        return null;
-    }
+
 }

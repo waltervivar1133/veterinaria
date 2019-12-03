@@ -5,48 +5,9 @@
 </head>
 
 
-<header class="fixed-top">
-    <section class="menu">
 
-        <div class="container-fluid">
-            <nav class=" container-fluid navbar barra navbar-expand-md">
-                <a class="navbar-brand" href="#"><img class="" src="/img/LOGO.png" width="170px" alt=""></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon" style="color: #2a3b47;"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav mr-auto">
+<header th:insert="fragments/nav" class="fixed-top">
 
-                    </ul>
-
-                    <ul class="navbar-nav justify-content-end">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Nosotros</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Buscar</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contactanos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link btn btn boton-iniciarSesion" href="#">Cerrar sesion</a>
-                        </li>
-
-                    </ul>
-
-                </div>
-            </nav>
-        </div>
-
-    </section>
 </header>
 
 <body>
@@ -60,15 +21,16 @@
                     <h1 class="mb-5">De aca puedes buscar la veterinarias<br> que esten por tu distrito</h1>
                 </div>
                 <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-                    <form action="#" method="post"
-                          th:object="${veterinaria}"
+                    <!--<form action="#" method="post"
+                          th:object="${veterinarias}"
                           th:action="@{veterinaria/buscarVeterinaria/{distrito}
                                     (distrito=${veterinaria.distrito})}"
 
-                    >
+                    >-->
+                    <form>
                         <div class="form-row">
                             <div class="col-12 col-md-9 mb-2 mb-md-0">
-                                <input type="text" class="form-control form-control-lg" id="distrito" placeholder="Ingresa tu distrito" th:field="*{distrito}">
+                                <input type="text" class="form-control form-control-lg" id="distrito" placeholder="Ingresa tu distrito" >
                             </div>
                             <div class="col-12 col-md-3">
                                 <button type="submit" class="btn btn-block btn-lg boton-iniciarSesion">Buscar</button>
@@ -89,20 +51,21 @@
     </section>
 
 
-<div th:switch="veterinarias">
-    <div th:case="*">
+
     <section class="tablaVeterinaria margin-50">
+        <div th:switch="veterinarias">
+            <div th:case="*">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                 <div class="card">
 
                     <div class="card-body">
-                        <div th:each="veterinaria: ${veterinarias}">
-                        <h5 scope="row" class="card-text" th:text="${veterinaria.nombre}"></h5>
-                        <h4 class="card-title" th:text="${veterinaria.correo}">,<h4 th:text="${veterinaria.numero}"></h4> </h4>
-                            <p class="card-text"th:text="${veterinaria.distrito}">,<p th:text="${veterinaria.direccion}"></p></p>
-                        </div>
+                        <div >
+                        <h5 scope= class="card-text" >Veterinaria</h5>
+                        <h4 class="card-title"><h4>Direccíon</h4> </h4>
+                            <p class="card-text">correo</p>
+                        </div >
                     </div>
 
                 </div>

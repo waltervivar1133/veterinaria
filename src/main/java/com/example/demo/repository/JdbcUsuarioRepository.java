@@ -65,9 +65,5 @@ public class JdbcUsuarioRepository implements UsuarioRepository {
         return usuario;
     }
 
-    @Override
-    public List<Usuario> findByDistrito(String s) {
-        return null;
-    }
 
 }

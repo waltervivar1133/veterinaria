@@ -66,12 +66,5 @@ public class JdbcVeterinariaRepository implements VeterinariaRepository {
                 JdbcVeterinariaRepository::VeterinariaRowMapper);
         return veterinaria;
     }
-    @Override
-    public List<Veterinaria> findByDistrito(String distrito) {
-        final String sql = "select * from veterinaria where distrito=?";
-        List<Veterinaria> veterinarias  = jdbcTemplate.query(sql,
-                new Object[]{distrito},
-                JdbcVeterinariaRepository::VeterinariaRowMapper);
-        return veterinarias;
-    }
+
 }

@@ -1,41 +1,41 @@
-<section class="menu">
 
-    <div class="container-fluid">
-        <nav class=" container-fluid navbar barra navbar-expand-md">
-            <a class="navbar-brand" href="#"><img class="" src="/img/LOGO.png" width="170px" alt=""></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon" style="color: #2a3b47;"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav mr-auto">
 
-                </ul>
+        <div class="container-fluid" xmlns:th="http://www.thymeleaf.org" >
+            <nav class=" container-fluid navbar barra navbar-expand-md">
+                <a class="navbar-brand" href="#"><img class="" src="/img/LOGO.png" width="170px" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" style="color: #2a3b47;"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto">
 
-                <ul class="navbar-nav justify-content-end">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Nosotros</a>
-                    </li>
+                    </ul>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Buscar</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contactanos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link btn btn boton-iniciarSesion" href="#">Cerrar sesion</a>
-                    </li>
+                    <ul class="navbar-nav justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link" th:href="@{/index}">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" th:href="@{/index}">Nosotros</a>
+                        </li>
 
-                </ul>
+                        <li class="nav-item">
+                            <a class="nav-link"  th:href="@{/buscarVeterinaria}">Buscar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" th:href="@{/index}">Contactanos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn boton-iniciarSesion" th:href="@{/administrador}">Administrar</a>
+                        </li>
 
-            </div>
-        </nav>
-    </div>
+                    </ul>
 
-</section>
+                </div>
+            </nav>
+        </div>
+
+
